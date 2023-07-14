@@ -3,11 +3,12 @@
 #include <time.h>
 
 /**
- * main - Entry point of the program
+ * main - prints the last digit of a randomly generated number
+ * and whether it is greater than 5, less than 6 or 0
  *
  * Return - Always 0 (Success)
  */
-int main(void) /* main function returns 0 */
+int main(void)
 {
 	int n;
 
