@@ -3,9 +3,10 @@
 #include <time.h>
 
 /**
- * main - Entry point of thr program
+ * main - assigns a random number to n and prints if negative
+ * or positive
  *
- * Return: 0 on success
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -14,16 +15,21 @@ int main(void)
 
 	srand(time(0)); /* Seeds the random number generator with a random time */
 
-	n = rand() % 21 - 10; /* Generates a random number between -10 and 10 */
+	n = rand() - RAND_MAX / 2;
 
-	printf("The number %d", n);
+	printf("%d", n);
 
 	if (n > 0)
+	{
 		printf(" is positive\n");
-	else if (n == 0)
-		printf(" is zero\n");
-	else
+	}
+	else if (n < 0)
+	{
 		printf(" is negative\n");
-
-	return 0;
+	}
+	else
+	{
+		printf(" is zero\n");
+	}
+	return (0);
 }
