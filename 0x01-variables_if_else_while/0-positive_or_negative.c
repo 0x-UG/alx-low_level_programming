@@ -3,26 +3,27 @@
 #include <time.h>
 
 /**
- * main - Entry point of the program
+ * main - Entry point of thr program
  *
  * Return: 0 on success
  */
+
 int main(void)
 {
 	int n;
 
-	srand(time(0)); /* Seed the random number generator with current time */
+	srand(time(0)); /* Seeds the random number generator with a random time */
 
-	n = rand() % 201 - 100; /* Generate a random number between -100 and 100 */
+	n = rand() % 21 - 10; /* Generates a random number between -10 and 10 */
 
 	printf("The number %d", n);
 
 	if (n > 0)
 		printf(" is positive\n");
-	else if (n < 0)
-		printf(" is negative\n");
-	else
+	else if (n == 0)
 		printf(" is zero\n");
+	else
+		printf(" is negative\n");
 
 	return 0;
 }
