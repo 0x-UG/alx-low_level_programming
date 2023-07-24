@@ -3,9 +3,9 @@
 
 /**
  * *_strcpy - copies string pointed to by src
- * @*dest: parameter1
- * @*src: parameter2
- * Return: 0 on success
+ * @*dest: destination
+ * @*src: source
+ * Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
